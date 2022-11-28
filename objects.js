@@ -11,6 +11,7 @@ let car = {    // objekat
 car.year = 2022;
 
 console.log(car.model, car.year);  // pozivanje propertija pomocu tacke
+console.log("makeAndModel() = " + car.makeAndModel());
 console.log(car.engines[1]);
 
 
@@ -21,15 +22,16 @@ let person = {
     imeIPrezime: function() {
         return this.firstName + " " + this.lastName;
     },
-    ostari: function() {
+    ostari: function(brojGodina) {
         this.age = this.age + brojGodina;
     }
 }
 
 console.log(person.imeIPrezime());
 console.log(person.firstName + " " + person.lastName);
+console.log(person.age);
 person.ostari(2);
-person.age(person.age);
+console.log(person.age);
 
 
 // niz objekata
